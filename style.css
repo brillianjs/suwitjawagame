@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.geter {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+.container {
+    height: 650px;
+    width: 100vw;
+    background-color: #f7f6e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 60%;
+    background-color: #e7e6e1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+
+
+}
+
+.container h1 {
+    color: #314e52;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4vw;
+    margin: 20px;
+}
+
+.chose {
+    width: 70%;
+    border-radius: 30px;
+    background-color: #f2a154;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.chose div img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border: 5px solid #314e52;
+    margin: 20px;
+
+}
+
+.chose div img:hover {
+    transform: scale(1.1)
+}
+
+.kotakmain {
+    height: 200px;
+    width: 70%;
+    border-radius: 30px;
+    background-color: #f2a154;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hasil {
+    height: 50px;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    width: 100px;
+    color: #314e52;
+    background-color: #e7e6e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pemain {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: 1s;
+    background-color: #181716;
+}
+
+.musuh {
+    background-color: #181716;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: 1s;
+}
